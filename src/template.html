@@ -51,6 +51,35 @@
         </div>
         <div class="content"></div>
     </div>
+    <div>
+        <dialog class="new-task">
+            <button class="close-modal">X</button>
+            <h1>New Task</h1>
+            <form id="new-task">
+                    <label for="title">Task Title</label>
+                    <input type="text" name="title" id="title" required>
+
+                    <label for="description">Task Description</label>
+                    <textarea name="description" id="description"></textarea>
+
+                    <label for="due">Due</label>
+                    <input type="date" name="due" id="due" required>
+
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+
+                    <label for="project">Project</label>
+                    <select name="project" id="pproject">
+                        <option value="My Project">My Project</option>
+                    </select>
+            </form>
+            <button type="submit" form="new-task" class="submit">Add Task</button>
+        </dialog>
+    </div>
     
     <script type="module" src="index.js"></script>
 </body>

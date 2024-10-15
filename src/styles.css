@@ -132,6 +132,86 @@ body{
     height:30px;
     width:30px;
 }
+
+/*************************dialog section*********************************************/
+dialog[open]{
+    background: hsla(184, 85%, 63%, 1);
+    background: linear-gradient(0deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 50%, hsla(319, 72%, 75%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4FE6F1", endColorstr="#A6A6DE", GradientType=1 );
+    font-size: 1.7rem;
+    width: 700px;
+    height:700px;
+    padding: 18px;
+    border-radius: 8px;
+    border:0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+form{
+    text-align: left;
+    font-size: 1.6rem;
+    
+    display:grid;
+    grid-template-columns: 200px 300px;
+    align-items: center;
+    row-gap: 40px;
+}
+
+input,
+textarea,
+select,
+option{
+    border: 0;
+    border-radius: 8px;
+    height: 16px;
+    width:300px;
+    padding:12px;
+    font-size: 1.3rem;
+    color:#000
+}
+
+textarea{
+    width: 100%;
+    height: 30px;
+    resize: none;
+}
+
+select{
+    padding: 18px;
+}
+
+
+.submit{
+    font-size: 1.3rem;
+    height: 36px;
+    width: 120px;
+    background: #4FE6F1;
+    color:#fff;
+    border-radius: 8px;
+    border:0;
+    cursor: pointer;
+}
+
+.close-modal{
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: none;
+    border:0;
+    color:#db1d1d;
+    cursor:pointer;
+
+    position: fixed;
+    left:70%;
+    bottom: 88%;
+}
 /***************content*****************/
 .content{
     flex:3.5;
